@@ -33,6 +33,7 @@ Source:         %{gosource}
 %prep
 %goprep
 %autopatch -p1
+rm -rf vendor
 
 %generate_buildrequires
 %go_generate_buildrequires
