@@ -43,7 +43,7 @@ Source:         %{gosource}
 
 %if %{with check}
 %check
-%gocheck
+%gocheck -d apps/tests/integration
 %endif
 
 %gopkgfiles
